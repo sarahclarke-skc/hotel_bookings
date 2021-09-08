@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { getBookings } from "../BookingsService";
+import BookingsList from "../components/BookingsList";
 
 
 const BookingsContainer = () => {
@@ -32,3 +33,5 @@ const BookingsContainer = () => {
         </>
     )
 }
+
+export default BookingsContainer
