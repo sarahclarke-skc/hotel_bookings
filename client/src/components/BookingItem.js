@@ -2,6 +2,7 @@ import React from "react";
 import { deleteBooking } from "../BookingsService";
 
 const BookingItem = ({booking, removeBooking}) => {
+
     const handleDelete = () => {
         deleteBooking(booking._id)
         .then(()=> {
@@ -13,7 +14,7 @@ const BookingItem = ({booking, removeBooking}) => {
         <h2>Guest Name: {booking.name}</h2>
         <p>Email: {booking.email}</p>
         <p>Checked In:{booking.status}</p>
-        <button onClick = {handleDelete} />
+        <button onClick = {handleDelete} >Delete</button>
         </>
     )
 }

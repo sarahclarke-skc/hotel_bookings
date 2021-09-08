@@ -1,4 +1,5 @@
 import React from 'react';
+import BookingItem from './BookingItem';
 
 
 const BookingsList = ({bookings, removeBooking}) => {
