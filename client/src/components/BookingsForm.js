@@ -14,6 +14,11 @@ const BookingsForm = ({addBooking}) => {
 
     const onSubmit = (e) => {
         e.preventDefault();
+       setFormData({
+           name: e.target.name.value,
+           email: e.target.email.value,
+           status: e.target.status.value
+       })
         postBooking(formData)
         .then((data) => {
             addBooking(data);
@@ -33,9 +38,10 @@ const BookingsForm = ({addBooking}) => {
             </div>
             <div>
                 <input type="radio" id="status" name="status" value="true" required/>
-                <label for="status">Checked In:</label>
+                <label htmlFor="status">Checked In:</label>
+
                 <input type="radio" id="status" name="status" value="false"/>
-                <label for="status">Checked In:</label>
+                <label htmlFor="status">Checked Out:</label>
             </div>
 
             <input type="submit" value="Save" id="save"/>

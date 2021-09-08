@@ -5,21 +5,21 @@ db.bookings.insertMany([
     {
         name: "Ringo Starr",
         email: "ringostarr@gmail.com",
-        status: true
+        status: "Yes"
     },
     {
         name: "John Lennon",
         email: "johnlennon@gmail.com",
-        status: false
+        status: "No"
     },
     {
         name: "Paul McCartney",
         email: "paulmccartney@gmail.com",
-        status: true
+        status: "Yes"
     },
     {
         name: "George Harrison",
         email: "georgeharrison@gmail.com",
-        status: false
+        status: "No"
     }
 ]);
