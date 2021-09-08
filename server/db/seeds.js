@@ -22,4 +22,4 @@ db.bookings.insertMany([
         email: "georgeharrison@gmail.com",
         status: false
     }
-])
+]);
